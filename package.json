@@ -12,7 +12,7 @@
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "sockjs": "0.3.4"
+    "sockjs": "0.3.8"
   },
   "devDependencies": {}
 }

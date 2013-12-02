@@ -12,7 +12,7 @@ module.exports = function(ss, messageEmitter, httpServer, config){
   config.client = config.client || {};
 
   // Send SockJS client-side code
-  var sockJsClient = fs.readFileSync(__dirname + '/client/lib.min.js', 'utf8');
+  var sockJsClient = fs.readFileSync(__dirname + '/client/sockjs.js', 'utf8');
   ss.client.send('lib', 'sockjs-client', sockJsClient, {minified: true});
 
   // Send socketstream-transport module
