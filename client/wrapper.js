@@ -82,7 +82,7 @@ module.exports = function(serverStatus, message, config){
 
         sock.onclose = function() {
             reconnectSwitch = true;
-            serverStatus.emit('disconnect');
+            serverStatus.emit('disconnect', reconnectionTimeout);
             attemptReconnect(reconnectionTimeout);
         };
 
